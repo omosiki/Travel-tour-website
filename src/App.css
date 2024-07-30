@@ -3,3 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+.body{
+    background-image: url(component/imgaes/Travel-tour-backg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: block;
+    text-align: center;
+    width: 100%;
+   
+    
+}
+.display{
+    width: 90%;
+    color: #f4f4f4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.display h2{
+    font-size: 30px;
+    text-transform: capitalize;
+   
+}
+.display p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #f4f4f4;
+}

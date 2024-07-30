@@ -1,12 +1,13 @@
 import React from 'react'
-import {logo, background} from "./../component/imgaes/logo-M.webp"
+import logo from "./../component/imgaes/logo-M.webp"
 import styled from 'styled-components'
 
 
 const Header = () => {
 
-  return (
-    
+  return ( 
+    <>
+      <section className='body'>
       <Headers>
            <div className="logo">
             <img src={logo} alt="Logo" />
@@ -20,19 +21,28 @@ const Header = () => {
            </nav>
            <div className='button-contain'>
            <Buttons>signIn</Buttons>
-           </div>
+          </div>
           
       </Headers>
-   
+      <div className="display">
+        <h2>Travel and explore the world to your taste</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fugiat?
+        </p>
+      </div>
+      </section>
+      
+   </>
   )
 }
 const Headers = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 0 5%;
-  
-  background-color: #cacef7;
+  height: 80px;
+ 
   align-items: center;
+
   .logo{
     padding: 10px;
   }
@@ -50,6 +60,7 @@ const Headers = styled.header`
   }
 
 `
+
 export const Buttons = styled.button`
 padding: 10px;
 border: none;

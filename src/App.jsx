@@ -1,7 +1,7 @@
 import React from 'react';
 import Landing from './component/Landing';
 
-// import './App.css'
+import './App.css'
 function App() {
   return (
     
