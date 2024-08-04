@@ -3,7 +3,7 @@ import "./navbar.css"
 import { MdOutlineTravelExplore } from 'react-icons/md';
 import { IoMdCloseCircle } from "react-icons/io";
 import { TbGridDots } from "react-icons/tb";
-
+import logo from "./../images/airplane.jpg"
 
 
 
@@ -25,12 +25,9 @@ const Navbar = () => {
     <section className='navBarSection'>
         <header className="header flex">
             <div className="logoDiv">
-              <a href="" className='logo flex'>
-             <h1>
-             <MdOutlineTravelExplore/> 
-               Travel
-             </h1>
-              </a>
+              <div className='logo flex'>
+             <img src={logo} alt="" />
+              </div>
             </div>
             <div className={active}>
                 <ul className="navLists flex">
