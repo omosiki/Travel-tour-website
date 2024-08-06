@@ -10,7 +10,7 @@
     box-shadow: 0 2px 4px rgba(244, 246, 248, 0.66);
 
     .logo{
-        color: #c48888;
+        color: #ae9c9c;
         cursor: pointer;
         font-weight: 600;
         align-items: center;
@@ -21,11 +21,13 @@
             color: antiquewhite;
             transform: translateY(5px);
         }
+       
+        
     }
     .logo img{
         width: 80px;
     }
-
+  
 @media screen  and (max-width: 768px){
         .navBar{
             position: absolute;
@@ -61,6 +63,7 @@
                         color: #82cbf6;
                     }
                 }
+              
             }
          
         .btn{
@@ -87,6 +90,64 @@
   }
     }
 
+    .homeText{
+        text-align: center;
+    }
+    .title{
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+    .subTitle{
+        color: white;
+        opacity: .9;
+        font-size: 13px;
+        font-weight: 300;
+        padding: 1rem 0;
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+    .homeCard{
+                width: 80%;
+                border-radius: 1rem;
+                padding: 2rem;
+                background: white;
+                position: absolute;
+                gap: 1rem;
+                justify-content: center;
+                bottom: -30%;
+                transform: translate(-50%);
+                left: 50%;
+                box-shadow: 0 2px 8px 4px rgb(178, 178,178, 0.45);
+    }
+    
+        .destination, 
+        .priceDiv,
+        .dateInput{
+         width: 100%;
+        }
+     label{
+        display: block;
+        color: rgb(16, 16, 16);
+        font-weight: 500;
+        font-size: 13px;
+        padding-bottom: 1rem;
+    
+        }
+    
+        input{
+            width: 100%;
+            background: #f7f4f4;
+            border-radius: 10px;
+            border: none;
+            padding: 8px;
+            font-size: 17px;
+            font-weight: 500;
+           
+    }
+
    .toggleNavbar{
         .icon{
             font-size: 25px;
@@ -98,3 +159,137 @@
    }
  }
 
+@media screen and (min-width:769px) {
+    .toggleNavbar, .closeNavbar{
+        display: none;
+    }
+  
+    
+    .header{
+        padding: 1.5rem 2rem;
+        /* display: flex; */
+        height: 80px;
+        /* justify-content: space-around; */
+        
+    }
+    .navLink{
+        padding: 0 20px;
+        font-size: 1rem;
+       /* border: 1px solid #555; */
+
+    }
+    .navLink:hover{
+       padding: 10px;
+       color: rgb(10, 10, 10);
+       border: 1px solid rgb(202, 196, 196);
+       border-radius: 10px;
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
+
+    .homeText{
+        font-size: 2rem;
+        color: rgb(11, 11, 11);
+        font-weight: 500;
+        text-align: center;
+       
+       
+    }
+    .homeText h2{
+        padding-bottom: 2rem;
+    }
+    .homeText p{
+        padding-bottom: 2rem;
+        font-size: 1.5rem;
+        color: rgb(11, 11, 11);
+    }
+    .homeText button{
+        font-size: 1.5rem;
+        background: black;
+      
+    }
+  
+    
+    .homeCard{
+        display: flex !important;
+        
+        width: 80%;
+        border-radius: 1rem;
+        padding: 1rem;
+        background: white;
+        position: absolute;
+        gap: 1rem;
+        justify-content: space-between;
+        bottom: -8%;
+        transform: translate(-50%);
+        left: 50%;
+        box-shadow: 0 2px 8px 4px rgb(178, 178,178, 0.45);
+    }
+ input{
+            width: 80%;
+            background: #f7f4f4;
+            border-radius: 10px;
+            border: none;
+            padding: 0.5rem;
+            font-size: 17px;
+            font-weight: 500;
+            }
+    .destination, 
+    .priceDiv,
+    .dateInput{
+     width: 100%;
+    }
+    label{
+        display: block;
+        color: rgb(16, 16, 16);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 0;
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+
+
+/* Home css */
+.home{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 90vh;
+    background: url("../images/Travel-backgroung.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+input &::placeholder{
+    font-size: 13px;
+    opacity: .5px;
+    font-weight: 400;
+} 
+input &:focus{
+    outline: none;
+ }
+ .btn{
+    padding: 6rem 1.5;
+    /* width: 100%; */
+    color: white;
+    font-weight: 600;
+ }
