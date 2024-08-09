@@ -33,8 +33,8 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 768px) {
-    .displayPopular img{
-        /* display: flex; */
+@media screen and (min-width: 769px) {
+    .popularDestination{
+        padding-top: 5rem;
     }
 }

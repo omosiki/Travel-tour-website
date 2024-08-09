@@ -99,7 +99,7 @@
     
     
      .homeCard .btn{
-        padding: 1rem ;
+       
         
         color: white; 
         font-weight: 600; 
@@ -151,10 +151,11 @@
     
     
      .homeCard .btn{
-        padding: 1rem ;
-        
+        padding: 0.5rem 1.5rem ;
+        font-size: 1rem;
         color: white; 
         font-weight: 600; 
         display: block;
+        margin-top: 2rem;
         }
 }

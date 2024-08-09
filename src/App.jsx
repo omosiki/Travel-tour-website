@@ -8,10 +8,10 @@ const App = () => {
   return (
     <>
       <Navbar/>
-    <Home/>
-    <Popular/>
-    <Offer/>
-    <Footer/>
+      <Home/>
+      <Popular/>
+      <Offer/>
+      <Footer/>
     </>
   )
 }
