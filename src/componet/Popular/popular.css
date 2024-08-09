@@ -1,9 +1,9 @@
 .popularDestination{
-    /* margin-top:  20rem ; */
+
     width: 80%;
-    padding: 5rem;
+   
     margin: auto;
-    padding: 20rem 0;
+    padding-top: 15rem ;
 }
 .popular{
     margin: 5rem 0;
@@ -22,7 +22,19 @@
 .slides{
     border-radius: 5rem;
 }
+.displayPopular{
+    box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.46);
+    /* gap: 5rem; */
+    margin-bottom: 3rem;
+}
+.displayPopular small{
+    color: rgb(240, 232, 232);
+    font-size: 1rem;
+    font-weight: 600;
+}
 
-img{
-    width: 100px;
+@media screen and (max-width: 768px) {
+    .displayPopular img{
+        /* display: flex; */
+    }
 }

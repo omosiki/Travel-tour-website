@@ -1,6 +1,17 @@
 import React from 'react'
 import "./home.css"
 const Home = () => {
+  const handldeSubmit = (e) =>{
+    e.preventDefault()
+    const bookingDetal = {
+      location: e.target().value,
+      price: e.target().value,
+      date: e.target().value
+    }
+    localStorage.setItem("bookingDetal", JSON.stringify(bookingDetal))
+    alert("Congratulation")
+  }
+
   return (
     <div>
       <section className="home">
@@ -10,34 +21,35 @@ const Home = () => {
         <h1>Plan Your Trip With Zikrah Travel.....</h1>
 
          <p className='subTitle'>
-          Travel to your favourite city with respectful of the environment 
+          Travel to your favourite city, Explore the world and see beautiful nature.
         </p> 
         <button className='btn'>Explore</button>
       </div>
 
-
+    <form action="">
       <div className="homeCard grid">
 
         <div className="destination">
           <label htmlFor="destination"> Destination:</label>
-            <input type="text" placeholder='location....' />
+            <input type="text" placeholder='location....' id='location' />
         </div>
 
         <div className="priceDiv">
           <label htmlFor="price">Amount:</label>
-           <input type="text" placeholder='$140-$500' />
+           <input type="text" placeholder='$140-$500' id='price' />
         </div>
 
 
         <div className="dateInput">
           <label htmlFor="date">Enter date</label>
-          <input type="date"  />
+          <input type="date" id='date'  />
         </div>
 
-        <button className='btn'>
+        <button onClick={handldeSubmit} className='btn'>
           Search
         </button>
       </div>
+      </form>
       </div>
       </section>
     </div>

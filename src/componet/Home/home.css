@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
     .home{
-        margin: 5rem 0;
+        margin: 10rem 0;
     }
     .homeCard{
         width: 80%;
@@ -30,6 +30,11 @@
         background: url("../../assets/images/Travel-backgroung.jpeg");
         background-position: center;
         background-size: cover;
+    }
+    .subTitle{
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
     }
    
     .homeText{
@@ -100,4 +105,56 @@
         font-weight: 600; 
         display: block;
         }
-     
+@media screen and (min-width: 769px) {
+    .homeCard{
+        width: 80%;
+        transform: translate(-50%);
+        position: absolute;
+        bottom: -10%;
+        background: rgb(254, 253, 253);
+        box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.46);
+        gap: 1rem;
+        color: black;
+        padding: 2rem;
+    border-radius: 1rem;
+        left: 50%;
+        display: flex !important;
+      justify-content: center;
+    }
+
+    label{
+        padding-bottom: 1rem;
+        color: black;
+        /* display: block; */
+     font-size: 13px;
+     font-weight: 500;
+     }
+    input{
+     border-radius: 10px;
+     padding: 0.2rem;
+        width: 100%;
+        background: #eeebeb;
+        border: none;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    
+    input &::placeholder{ 
+        font-size: 13px;
+        opacity: .5px;
+        font-weight: 400;
+    } 
+    input &:focus{
+        outline: none;
+     }
+    
+    
+     .homeCard .btn{
+        padding: 1rem ;
+        
+        color: white; 
+        font-weight: 600; 
+        display: block;
+        }
+}
