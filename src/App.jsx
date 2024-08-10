@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './componet/Navbar/Navbar'
-import Home from './componet/Home/Home'
-import Popular from './componet/Popular/Popular'
-import Offer from './componet/Offer/Offer'
-import Footer from './componet/Footer/Footer'
+import Navbar from "./component/Navbar/Navbar"
+import Home from "./component/Home/Home"
+import Popular from "./component/Popular/Popular"
+import Offer from "./component/Offer/Offer"
+import Footer from "./component/Footer/Footer"
 const App = () => {
   return (
     <>
