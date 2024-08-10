@@ -19,4 +19,7 @@ Technologies Used
  HTML, CSS, Carousel, React.js and react-Icon.
 
 
+<!-- Github link -->
+https://github.com/omosiki/Travel-Tour-React
+
 Note: This is my first time using react for this kind of project, Dont expect it to be perfect!!, I did my best.
